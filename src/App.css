@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-container {
+  width: 500px;
+  height: 680px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  box-shadow: 6px 6px 15px -3px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 6px 6px 15px -3px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 6px 6px 15px -3px rgba(0, 0, 0, 0.69);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.head-content {
+  display: flex;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container {
+  margin: 15px;
+}
+.form-label {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.container-fluid {
+  background: url("https://visme.co/blog/wp-content/uploads/most-unique-reports-header-1200.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.form-control {
+  background-color: transparent !important;
+  color: black;
+  border-bottom: 2px solid black;
+  border-top: none !important;
+  border-left: none !important ;
+  border-right: none !important;
+  border-radius: 0 !important;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: black !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.name,
+.email {
+  position: relative;
+}
+.name-icon,
+.email-icon {
+  position: absolute;
+  right: 25px;
+  top: 40px;
 }
